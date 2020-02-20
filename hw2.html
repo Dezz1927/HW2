@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+	<style>
+		header, header * {
+			border: 1px solid black;
+			margin: 0;
+			padding: 0;
+			background-color: orange;
+		}
+		.clearfix:before,
+		.clearfix:after {
+			content: '';
+			clear: both;
+			display: block;
+			float: none;
+		}
+		.Navigation	{
+			float: right;
+			position: relative;
+			top: 45px;
+			right: 400px;
+
+			
+
+		}
+		.Logo {
+			float: left;
+			display: block;
+		}
+		.Navigation_home,
+		.Navigation_gallery,
+		.Navigation_tickets,
+		.Navigation_shop,
+		.Navigation_team
+		{
+			padding: 10px 20px;
+			float: left;
+			text-decoration: none;
+			color: white;
+			font-family: 26px aerial;
+			background-color: red;
+		}
+
+	</style>
+<body>
+	<header class="Header clearfix">
+		<a href="#" class="Logo">
+			<img src="logo.png" width="200" height="100" alt="Logo" class="Logo">
+		</a>
+		<nav class="Navigation clearfix">
+			<a href="#" class="Navigation_home">home</a>
+			<a href="#" class="Navigation_gallery">gallery</a>
+			<a href="#" class="Navigation_tickets">tickets</a>
+			<a href="#" class="Navigation_shop">shop</a>
+			<a href="#" class="Navigation_team">team</a>
+		</nav>	
+	</header>
+
+</body>
+</html>
